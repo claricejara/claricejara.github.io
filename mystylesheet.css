@@ -15,6 +15,10 @@ h1{
 	line-height: 0.8;
 }
 
+a{
+	text-decoration: none;
+}
+
 
 /* ====== Navbar ======*/
 
@@ -57,7 +61,7 @@ h1{
 #home{
 	width: 100%;
 	height: 100vh;
-	background: url("../images/back.jpg") center no-repeat;
+	background: url("../images/background.jpg") center no-repeat;
 	background-size: cover;
 	position: relative;
 	white-space: nowrap;
@@ -124,6 +128,8 @@ h1{
 	font-size: 1em;
 	color: black;
 	border: 1px solid rgb(166, 176, 190);
+	height: 100%;
+	width: 100%;
 }
 
 .card img{
@@ -139,9 +145,8 @@ h1{
 	z-index: 1000;
 	background-color: white;
 	border: 2px solid rgb(166, 176, 190);
-	text-decoration: none;
 	white-space: nowrap;
-	color: black;
+	color: rgb(0, 0, 0);
 }
 
 .card-body{
@@ -151,11 +156,12 @@ h1{
 	opacity: 0;
 	overflow: auto;
 	font-weight: bolder;
+	background-color: rgba(255, 255, 255, 0.582);
 }
 
 .card-body:hover{
 	opacity: 0.7;
-	backdrop-filter: blur(1.5rem);
+	backdrop-filter: blur(5rem);
 }
 
 .tools p{
@@ -165,6 +171,14 @@ h1{
 	padding: 2px 5px;
 	font-size: 80%;
 	margin: 2px;
+}
+
+.code-link a {
+	margin-top: 10px;
+	float: right;
+	color: black;
+	text-decoration: underline;
+	font-size: 80%;
 }
 
 /* ====== Contact ====== */
